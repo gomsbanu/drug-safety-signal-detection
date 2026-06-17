@@ -1,0 +1,19 @@
+{
+  "name": "FAERS Drug Safety Analytics",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-sqlite"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "postCreateCommand": "pip install -r .devcontainer/requirements.txt",
+  "forwardPorts": [8888]
+}
